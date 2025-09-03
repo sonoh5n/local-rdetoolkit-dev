@@ -1,0 +1,25 @@
+{
+    "analyzer_work_function": {
+        "name": {
+            "ja": "分析器仕事関数",
+            "en": "Analyzer Work Function"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "analyser_work_function",
+        "unit": "eV",
+        "originalType": "number",
+        "variable": 0
+    },
+    "measurement.measured_date": {
+        "name": {
+            "ja": "分析年月日",
+            "en": "Measured date"
+        },
+        "schema": {
+            "type": "string",
+            "format": "date"
+        }
+    }
+}

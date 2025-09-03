@@ -1,0 +1,65 @@
+{
+    "datasetId": "565a68ae-becc-49f4-94b8-4106dba4eb14",
+    "basic": {
+        "dateSubmitted": "2024-06-11",
+        "dataOwnerId": "69edcb37fc47ceb5089ff74688121039a8637a163562653934303366",
+        "dataName": "あ",
+        "instrumentId": null,
+        "experimentId": null,
+        "description": ""
+    },
+    "custom": {
+        "common_data_type": "セグメンテーション",
+        "common_data_origin": "experiments",
+        "common_technical_category": "process",
+        "common_reference": null,
+        "process_processed_date": null,
+        "process_process_category": "鋳造",
+        "process_process_technique": "真空アーク溶解",
+        "process_processing_environment": "不活性ガス中",
+        "process_key_temperature": null,
+        "process_instrumentation_site": null,
+        "process_standardized_procedure": null,
+        "measurement_measured_date": null
+    },
+    "sample": {
+        "sampleId": "5ac7a7b2-ea80-478d-8a21-ff191965f103",
+        "names": [
+            "dummy"
+        ],
+        "composition": null,
+        "referenceUrl": null,
+        "description": null,
+        "generalAttributes": [
+            {
+                "termId": "3adf9874-7bcb-e5f8-99cb-3d6fd9d7b55e",
+                "value": null
+            },
+            {
+                "termId": "e2d20d02-2e38-2cd3-b1b3-66fdb8a11057",
+                "value": null
+            },
+            {
+                "termId": "efcf34e7-4308-c195-6691-6f4d28ffc9bb",
+                "value": null
+            },
+            {
+                "termId": "7cc57dfb-8b70-4b3a-5315-fbce4cbf73d0",
+                "value": null
+            },
+            {
+                "termId": "1e70d11d-cbdd-bfd1-9301-9612c29b4060",
+                "value": null
+            },
+            {
+                "termId": "5e166ac4-bfcd-457a-84bc-8626abe9188f",
+                "value": null
+            },
+            {
+                "termId": "0d0417a3-3c3b-496a-b0fb-5a26f8a74166",
+                "value": null
+            }
+        ],
+        "ownerId": "308a39ac2cdd78d4e54c541979a179502cc942543432373562343632"
+    }
+}

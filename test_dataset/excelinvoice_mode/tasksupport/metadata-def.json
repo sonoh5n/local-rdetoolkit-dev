@@ -1,0 +1,133 @@
+{
+    "sample_temperature_target_value": {
+        "name": {
+            "ja": "試料温度 (目標値)",
+            "en": "Sample temperature (target value)"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 6,
+        "unit": "C",
+        "original_name": "Target Temp Start"
+    },
+    "measurement_start_time": {
+        "name": {
+            "ja": "測定開始日時",
+            "en": "Measurement start time"
+        },
+        "schema": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "order": 2,
+        "original_name": "Measurement Start"
+    },
+    "measurement_end_time": {
+        "name": {
+            "ja": "測定終了日時",
+            "en": "Measurement end time"
+        },
+        "schema": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "order": 3,
+        "original_name": "Measurement End"
+    },
+    "x-ray_intensity_start": {
+        "name": {
+            "ja": "入射X線強度 (開始時)",
+            "en": "X-ray intensity (start)"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 4,
+        "unit": "counts",
+        "original_name": "I0 Start"
+    },
+    "measuring_point_temperature_start": {
+        "name": {
+            "ja": "測温点温度 (開始時)",
+            "en": "Measuring  point temperature (start)"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 5,
+        "unit": "C",
+        "original_name": "Process Value Start"
+    },
+    "measuring_point_temperature_target_value": {
+        "name": {
+            "ja": "測温点温度 (目標値)",
+            "en": "Measuring  point temperature (target value)"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 7,
+        "unit": "C",
+        "original_name": "Calibrated Set Value Start"
+    },
+    "x-ray_intensity_end": {
+        "name": {
+            "ja": "入射X線強度 (終了時)",
+            "en": "X-ray intensity (end)"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 8,
+        "unit": "counts",
+        "original_name": "I0 End"
+    },
+    "measuring_point_temperature_end": {
+        "name": {
+            "ja": "測温点温度 (終了時)",
+            "en": "Measuring  point temperature (end)"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 9,
+        "unit": "C",
+        "original_name": "Process Value End"
+    },
+    "exposure_time": {
+        "name": {
+            "ja": "露光時間",
+            "en": "Exposure time"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "order": 10,
+        "unit": "sec",
+        "original_name": "Exp time"
+    },
+    "x-ray_energy": {
+        "name": {
+            "ja": "X線強度",
+            "en": "X-ray energy"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "order": 11,
+        "unit": "keV",
+        "original_name": "X-ray energy"
+    },
+    "proposal_number": {
+        "name": {
+            "ja": "課題番号",
+            "en": "Proposal Number"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "order": 12,
+        "original_name": "Proposal No."
+    }
+}

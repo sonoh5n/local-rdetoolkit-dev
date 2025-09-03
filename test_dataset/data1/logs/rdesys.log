@@ -1,0 +1,134 @@
+2024-12-18 13:24:16,609 - [rdetoolkit.workflows](ERROR) - Validation Errors in invoice.schema.json. Please correct the following fields
+1. Field: properties.sample.required.1
+   Type: literal_error
+   Context: Input should be 'names' or 'sampleId'
+Traceback (most recent call last):
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 175, in __pre_validate
+    InvoiceSchemaJson(**data)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InvoiceSchemaJson
+properties.sample.required.1
+  Input should be 'names' or 'sampleId' [type=literal_error, input_value='ownerId', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/literal_error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/workflows.py", line 227, in run
+    status = invoice_mode_process(str(idx), srcpaths, rdeoutput_resource, custom_dataset_function)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/modeproc.py", line 369, in invoice_mode_process
+    invoice_validate(resource_paths.invoice.joinpath("invoice.json"), schema_path)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 273, in invoice_validate
+    validator = InvoiceValidator(schema)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 96, in __init__
+    self.schema = self.__pre_validate()
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 182, in __pre_validate
+    raise InvoiceSchemaValidationError(emsg) from validation_error
+rdetoolkit.exceptions.InvoiceSchemaValidationError: Validation Errors in invoice.schema.json. Please correct the following fields
+1. Field: properties.sample.required.1
+   Type: literal_error
+   Context: Input should be 'names' or 'sampleId'
+
+2024-12-18 13:24:42,887 - [rdetoolkit.workflows](ERROR) - Validation Errors in invoice.schema.json. Please correct the following fields
+1. Field: properties.sample.required.1
+   Type: literal_error
+   Context: Input should be 'names' or 'sampleId'
+Traceback (most recent call last):
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 175, in __pre_validate
+    InvoiceSchemaJson(**data)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InvoiceSchemaJson
+properties.sample.required.1
+  Input should be 'names' or 'sampleId' [type=literal_error, input_value='ownerId', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/literal_error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/workflows.py", line 227, in run
+    status = invoice_mode_process(str(idx), srcpaths, rdeoutput_resource, custom_dataset_function)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/modeproc.py", line 369, in invoice_mode_process
+    invoice_validate(resource_paths.invoice.joinpath("invoice.json"), schema_path)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 273, in invoice_validate
+    validator = InvoiceValidator(schema)
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 96, in __init__
+    self.schema = self.__pre_validate()
+  File "/Users/sonokawa/.pyenv/versions/3.10.10/lib/python3.10/site-packages/rdetoolkit/validation.py", line 182, in __pre_validate
+    raise InvoiceSchemaValidationError(emsg) from validation_error
+rdetoolkit.exceptions.InvoiceSchemaValidationError: Validation Errors in invoice.schema.json. Please correct the following fields
+1. Field: properties.sample.required.1
+   Type: literal_error
+   Context: Input should be 'names' or 'sampleId'
+
+2025-03-31 14:54:18,831 - [modules.modules](DEBUG) - test
+2025-03-31 15:03:13,002 - [modules.modules](DEBUG) - test
+2025-03-31 15:03:55,107 - [modules.modules](DEBUG) - test
+2025-03-31 15:07:27,879 - [modules.modules](DEBUG) - test
+2025-03-31 15:08:41,702 - [modules.modules](DEBUG) - test
+2025-03-31 15:09:14,410 - [modules.modules](DEBUG) - test
+2025-03-31 15:13:03,483 - [modules.modules](DEBUG) - test
+2025-03-31 15:15:10,573 - [modules.modules](DEBUG) - test
+2025-03-31 15:15:39,313 - [modules.modules](DEBUG) - test
+2025-03-31 15:16:39,322 - [modules.modules](DEBUG) - test
+2025-03-31 15:19:51,545 - [modules.modules](DEBUG) - test
+2025-03-31 15:22:34,865 - [modules.modules](DEBUG) - test
+2025-03-31 15:23:47,042 - [modules.modules](DEBUG) - test
+2025-04-01 11:16:40,359 - [modules.modules](DEBUG) - test
+2025-04-01 11:22:21,634 - [modules.modules](DEBUG) - test
+2025-04-01 11:23:24,659 - [modules.modules](DEBUG) - test
+2025-04-01 11:58:41,446 - [modules.modules](DEBUG) - test
+2025-04-01 12:04:02,354 - [modules.modules](DEBUG) - test
+2025-04-01 12:06:11,068 - [modules.modules](DEBUG) - test
+2025-04-01 12:15:53,260 - [modules.modules](DEBUG) - test
+2025-04-01 13:13:02,845 - [modules.modules](DEBUG) - test
+2025-04-01 13:13:53,661 - [modules.modules](DEBUG) - test
+2025-04-01 13:14:19,555 - [modules.modules](DEBUG) - test
+2025-04-01 13:14:53,714 - [rdetoolkit.workflows](ERROR) - Error: ERROR: failed to cast metaDef value
+Traceback (most recent call last):
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/errors.py", line 43, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/container/modules/modules.py", line 80, in success_modules
+    m.save_meta(b.meta.joinpath("metadata.json"), meta)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/container/modules/modules.py", line 65, in save_meta
+    metaobj.assign_vals(const_meta_info)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/rde2util.py", line 405, in assign_vals
+    self.__process_meta_value(kdef, vdef, _vsrc, ignore_empty_strvalue)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/rde2util.py", line 441, in __process_meta_value
+    self.__set_variable_metadata(kdef, _vsrc, vdef, ignore_empty_strvalue)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/rde2util.py", line 571, in __set_variable_metadata
+    self.metaVar[idx][key] = self._metadata_validation(val_src_element, outtype, outfmt, orgtype, outunit)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/rde2util.py", line 621, in _metadata_validation
+    _casted_value = castval(vstr, orgtype, outfmt)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/rde2util.py", line 712, in castval
+    raise StructuredError(emsg)
+rdetoolkit.exceptions.StructuredError: ERROR: failed to cast metaDef value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/workflows.py", line 227, in run
+    status = invoice_mode_process(str(idx), srcpaths, rdeoutput_resource, custom_dataset_function)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/modeproc.py", line 347, in invoice_mode_process
+    datasets_process_function(srcpaths, resource_paths)
+  File "/Users/sonokawa/Desktop/work/develop-rdetoolkit/.venv/lib/python3.10/site-packages/rdetoolkit/errors.py", line 48, in wrapper
+    raise handle_exception(e, error_message=_emsg, error_code=_ecode, eobj=_eobj, verbose=verbose) from e
+rdetoolkit.exceptions.StructuredError: Error: ERROR: failed to cast metaDef value
+2025-04-01 13:15:05,114 - [modules.modules](DEBUG) - test
+2025-04-01 14:00:37,542 - [modules.modules](DEBUG) - test
+2025-04-01 14:02:11,463 - [modules.modules](DEBUG) - test
+2025-04-01 14:03:26,890 - [modules.modules](DEBUG) - test
+2025-04-01 15:28:01,034 - [modules.modules](DEBUG) - test
+2025-04-01 15:30:10,208 - [modules.modules](DEBUG) - test
+2025-04-01 15:30:45,229 - [modules.modules](DEBUG) - test
+2025-04-01 15:33:06,290 - [modules.modules](DEBUG) - test
+2025-04-01 15:34:59,036 - [modules.modules](DEBUG) - test
+2025-04-01 16:12:33,427 - [modules.modules](DEBUG) - test
+2025-04-01 16:18:01,894 - [modules.modules](DEBUG) - test
+2025-04-01 16:26:22,235 - [modules.modules](DEBUG) - test
+2025-04-01 16:27:34,943 - [modules.modules](DEBUG) - test
+2025-04-01 16:29:13,323 - [modules.modules](DEBUG) - test
+2025-04-01 16:39:34,022 - [modules.modules](DEBUG) - test
+2025-04-01 16:59:32,815 - [modules.modules](DEBUG) - test
+2025-04-01 17:00:40,752 - [modules.modules](DEBUG) - test

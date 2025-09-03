@@ -1,0 +1,2 @@
+basic/dataName,file[0],file[1],file[2],file[3],alloyCompositionName,heatTreatmentConditions,sample/names,magnification,areaInformation,model,custom/measurement_measured_date,custom/number_field
+A3_20230403_1800d24h_2000_1,model/44.model,model/44.arff,preprocess/1.png,segmentation/1.png,A3,1800d24h,A3_20230403_1800d24h,2000,1,43,2023-09-02 00:00:00,100.12

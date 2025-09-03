@@ -1,0 +1,80 @@
+2025-08-25 10:25:04,104 - [rdetoolkit.processing.pipeline](INFO) - Starting pipeline execution for mode: SmartTableInvoice
+2025-08-25 10:25:04,105 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableEarlyExitProcessor
+2025-08-25 10:25:04,106 - [rdetoolkit.processing.processors.smarttable_early_exit](INFO) - Original SmartTable file detected: data/inputdata/smarttable_list_sample(segmentation)(1).xlsx
+2025-08-25 10:25:04,107 - [rdetoolkit.processing.processors.smarttable_early_exit](INFO) - Updating invoice.json dataName to: smarttable_list_sample(segmentation)(1).xlsx
+2025-08-25 10:25:04,112 - [rdetoolkit.processing.processors.smarttable_early_exit](DEBUG) - invoice.json updated with dataName: smarttable_list_sample(segmentation)(1).xlsx
+2025-08-25 10:25:04,113 - [rdetoolkit.processing.processors.smarttable_early_exit](DEBUG) - File copied: data/inputdata/smarttable_list_sample(segmentation)(1).xlsx -> data/raw/smarttable_list_sample(segmentation)(1).xlsx
+2025-08-25 10:25:04,113 - [rdetoolkit.processing.processors.smarttable_early_exit](INFO) - Copied SmartTable file to raw: data/raw/smarttable_list_sample(segmentation)(1).xlsx
+2025-08-25 10:25:04,113 - [rdetoolkit.processing.processors.smarttable_early_exit](DEBUG) - Starting SmartTable file validation
+2025-08-25 10:25:04,114 - [rdetoolkit.processing.processors.validation](DEBUG) - metadata.json does not exist, skipping validation
+2025-08-25 10:25:04,114 - [rdetoolkit.processing.processors.smarttable_early_exit](DEBUG) - Metadata validation completed successfully
+2025-08-25 10:25:04,149 - [rdetoolkit.processing.processors.validation](DEBUG) - Invoice validation completed successfully
+2025-08-25 10:25:04,149 - [rdetoolkit.processing.processors.smarttable_early_exit](DEBUG) - Invoice validation completed successfully
+2025-08-25 10:25:04,149 - [rdetoolkit.processing.processors.smarttable_early_exit](DEBUG) - All SmartTable validation completed successfully
+2025-08-25 10:25:04,149 - [rdetoolkit.processing.processors.smarttable_early_exit](INFO) - SmartTable validation completed successfully
+2025-08-25 10:25:04,149 - [rdetoolkit.processing.processors.smarttable_early_exit](INFO) - Skipping remaining processors for SmartTable file entry
+2025-08-25 10:25:04,149 - [rdetoolkit.processing.pipeline](INFO) - Processor SmartTableEarlyExitProcessor requested to skip remaining processors: SmartTable Error: SmartTable file processing and validation completed
+2025-08-25 10:25:04,155 - [rdetoolkit.processing.pipeline](INFO) - Starting pipeline execution for mode: SmartTableInvoice
+2025-08-25 10:25:04,155 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableEarlyExitProcessor
+2025-08-25 10:25:04,155 - [rdetoolkit.processing.pipeline](DEBUG) - Processor SmartTableEarlyExitProcessor completed successfully
+2025-08-25 10:25:04,155 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableInvoiceInitializer
+2025-08-25 10:25:04,155 - [rdetoolkit.processing.processors.invoice](DEBUG) - Processing SmartTable invoice initialization for SmartTableInvoice
+2025-08-25 10:25:04,156 - [rdetoolkit.processing.processors.invoice](DEBUG) - Processing CSV file: data/temp/fsmarttable_list_sample(segmentation)(1)_0000.csv
+2025-08-25 10:25:04,159 - [rdetoolkit.processing.processors.invoice](DEBUG) - Loaded original invoice from data/invoice/invoice.json
+2025-08-25 10:25:04,166 - [rdetoolkit.processing.processors.invoice](DEBUG) - Successfully generated invoice at data/divided/0001/invoice/invoice.json
+2025-08-25 10:25:04,166 - [rdetoolkit.processing.pipeline](DEBUG) - Processor SmartTableInvoiceInitializer completed successfully
+2025-08-25 10:25:04,166 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableFileCopier
+2025-08-25 10:25:04,166 - [rdetoolkit.processing.processors.files](DEBUG) - Skipping SmartTable generated CSV: data/temp/fsmarttable_list_sample(segmentation)(1)_0000.csv
+2025-08-25 10:25:04,167 - [rdetoolkit.processing.pipeline](DEBUG) - Processor SmartTableFileCopier completed successfully
+2025-08-25 10:25:04,167 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: DatasetRunner
+2025-08-25 10:25:04,167 - [rdetoolkit.processing.processors.datasets](DEBUG) - Executing custom dataset processing function
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.processors.datasets](DEBUG) - Custom dataset processing completed successfully
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.pipeline](DEBUG) - Processor DatasetRunner completed successfully
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: ThumbnailGenerator
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.processors.thumbnails](DEBUG) - Thumbnail generation disabled, skipping
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.pipeline](DEBUG) - Processor ThumbnailGenerator completed successfully
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: VariableApplier
+2025-08-25 10:25:04,168 - [rdetoolkit.processing.processors.variables](DEBUG) - Magic variables disabled, skipping
+2025-08-25 10:25:04,171 - [rdetoolkit.processing.pipeline](DEBUG) - Processor VariableApplier completed successfully
+2025-08-25 10:25:04,171 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: DescriptionUpdater
+2025-08-25 10:25:04,171 - [rdetoolkit.processing.processors.descriptions](DEBUG) - Updating descriptions with features
+2025-08-25 10:25:04,220 - [rdetoolkit.processing.processors.descriptions](DEBUG) - Description update completed (errors suppressed)
+2025-08-25 10:25:04,220 - [rdetoolkit.processing.pipeline](DEBUG) - Processor DescriptionUpdater completed successfully
+2025-08-25 10:25:04,220 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: MetadataValidator
+2025-08-25 10:25:04,221 - [rdetoolkit.processing.processors.validation](DEBUG) - metadata.json does not exist, skipping validation
+2025-08-25 10:25:04,221 - [rdetoolkit.processing.pipeline](DEBUG) - Processor MetadataValidator completed successfully
+2025-08-25 10:25:04,221 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: InvoiceValidator
+2025-08-25 10:25:04,246 - [rdetoolkit.processing.processors.validation](DEBUG) - Invoice validation completed successfully
+2025-08-25 10:25:04,247 - [rdetoolkit.processing.pipeline](DEBUG) - Processor InvoiceValidator completed successfully
+2025-08-25 10:25:04,259 - [rdetoolkit.processing.pipeline](INFO) - Starting pipeline execution for mode: SmartTableInvoice
+2025-08-25 10:25:04,259 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableEarlyExitProcessor
+2025-08-25 10:25:04,259 - [rdetoolkit.processing.pipeline](DEBUG) - Processor SmartTableEarlyExitProcessor completed successfully
+2025-08-25 10:25:04,259 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableInvoiceInitializer
+2025-08-25 10:25:04,259 - [rdetoolkit.processing.processors.invoice](DEBUG) - Processing SmartTable invoice initialization for SmartTableInvoice
+2025-08-25 10:25:04,259 - [rdetoolkit.processing.processors.invoice](DEBUG) - Processing CSV file: data/temp/fsmarttable_list_sample(segmentation)(1)_0001.csv
+2025-08-25 10:25:04,262 - [rdetoolkit.processing.processors.invoice](DEBUG) - Loaded original invoice from data/invoice/invoice.json
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.invoice](DEBUG) - Successfully generated invoice at data/divided/0002/invoice/invoice.json
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Processor SmartTableInvoiceInitializer completed successfully
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: SmartTableFileCopier
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.files](DEBUG) - Skipping SmartTable generated CSV: data/temp/fsmarttable_list_sample(segmentation)(1)_0001.csv
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Processor SmartTableFileCopier completed successfully
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: DatasetRunner
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.datasets](DEBUG) - Executing custom dataset processing function
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.datasets](DEBUG) - Custom dataset processing completed successfully
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Processor DatasetRunner completed successfully
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: ThumbnailGenerator
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.thumbnails](DEBUG) - Thumbnail generation disabled, skipping
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Processor ThumbnailGenerator completed successfully
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: VariableApplier
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.variables](DEBUG) - Magic variables disabled, skipping
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Processor VariableApplier completed successfully
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: DescriptionUpdater
+2025-08-25 10:25:04,268 - [rdetoolkit.processing.processors.descriptions](DEBUG) - Updating descriptions with features
+2025-08-25 10:25:04,312 - [rdetoolkit.processing.processors.descriptions](DEBUG) - Description update completed (errors suppressed)
+2025-08-25 10:25:04,312 - [rdetoolkit.processing.pipeline](DEBUG) - Processor DescriptionUpdater completed successfully
+2025-08-25 10:25:04,312 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: MetadataValidator
+2025-08-25 10:25:04,312 - [rdetoolkit.processing.processors.validation](DEBUG) - metadata.json does not exist, skipping validation
+2025-08-25 10:25:04,312 - [rdetoolkit.processing.pipeline](DEBUG) - Processor MetadataValidator completed successfully
+2025-08-25 10:25:04,312 - [rdetoolkit.processing.pipeline](DEBUG) - Executing processor: InvoiceValidator
+2025-08-25 10:25:04,347 - [rdetoolkit.processing.processors.validation](DEBUG) - Invoice validation completed successfully
+2025-08-25 10:25:04,347 - [rdetoolkit.processing.pipeline](DEBUG) - Processor InvoiceValidator completed successfully

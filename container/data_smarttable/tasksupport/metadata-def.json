@@ -1,0 +1,47 @@
+{
+    "alloyCompositionName": {
+        "name": {
+            "ja": "合金組成",
+            "en": "Alloy composition name"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "heatTreatmentConditions": {
+        "name": {
+            "ja": "熱処理条件",
+            "en": "Heat treatment conditions"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "magnification": {
+        "name": {
+            "ja": "画像倍率",
+            "en": "Magnification"
+        },
+        "schema": {
+            "type": "number"
+        }
+    },
+    "areaInformation": {
+        "name": {
+            "ja": "エリア情報",
+            "en": "Area Information"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "model": {
+        "name": {
+            "ja": "モデル",
+            "en": "Model"
+        },
+        "schema": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "nims-rdemagnetic-group/M012-1_spring8-synchrotron-magnetic-xrd",
+    "description": "None",
+    "type": "object",
+    "required": [
+        "custom",
+        "sample"
+    ],
+    "properties": {
+        "custom": {
+            "type": "object",
+            "label": {
+                "ja": "固有情報",
+                "en": "Custom Information"
+            },
+            "required": [],
+            "properties": {
+                "data_type": {
+                    "label": {
+                        "ja": "登録データ種別",
+                        "en": "Data Type"
+                    },
+                    "type": "string",
+                    "default": "計測データ"
+                },
+                "mesurement_date": {
+                    "label": {
+                        "ja": "計測日時",
+                        "en": "Mesurement Date"
+                    },
+                    "type": "string"
+                },
+                "anneal_temperature": {
+                    "label": {
+                        "ja": "アニール温度",
+                        "en": "Anneal Temperature"
+                    },
+                    "type": "number",
+                    "options": {
+                        "unit": "C"
+                    }
+                },
+                "measurement": {
+                    "label": {
+                        "ja": "測定手法",
+                        "en": "Measurement"
+                    },
+                    "type": "string"
+                },
+                "wavelength": {
+                    "label": {
+                        "ja": "波長",
+                        "en": "Wavelength"
+                    },
+                    "type": "number",
+                    "options": {
+                        "unit": "angstrom"
+                    }
+                },
+                "x-axis_minimum_value": {
+                    "label": {
+                        "ja": "X軸の表示下限値",
+                        "en": "X-axis minimum value"
+                    },
+                    "type": "number"
+                },
+                "x-axis_maximumvalue": {
+                    "label": {
+                        "ja": "X軸の表示上限値",
+                        "en": "X-axis maximumvalue"
+                    },
+                    "type": "number"
+                }
+            }
+        },
+        "sample": {
+            "type": "object",
+            "label": {
+                "ja": "試料情報",
+                "en": "Sample Information"
+            },
+            "properties": {}
+        }
+    }
+}

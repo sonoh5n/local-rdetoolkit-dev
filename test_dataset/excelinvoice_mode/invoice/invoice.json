@@ -1,0 +1,39 @@
+{
+  "datasetId": "e66233bf-821a-404c-a584-083ff36bb825",
+  "basic": {
+      "dateSubmitted": "2023-07-11",
+      "dataOwnerId": "060e27b4095a5fa40e9414888108ce60e5628a1b3830643062663233",
+      "dataName": "DMF_intf_300K",
+      "instrumentId": "1f6ada22-22cf-42e2-8ba0-9b03b32f7691",
+      "experimentId": null,
+      "description": "",
+      "dataset_title": "TEST_M012-2_spring8-synchrotron-magnetic-xrd",
+      "dataOwner": "SONOKAWA,Hayato"
+  },
+  "custom": {
+    "data_type": "計測データ",
+    "phase_reset": "dummy",
+    "anneal_temperature": 100,
+    "measurement": "XRD",
+    "wavelength": 0.111,
+    "zero_shift": 0.18,
+    "reference_data": "sample_data.dat",
+    "background_capillary": "sample",
+    "diameter_of_the_background_capillary": "60",
+    "thickness_of_the_background_capillary": "100",
+    "x-axis_minimum_value": 10,
+    "x-axis_maximumvalue": 30
+  },
+  "sample": {
+      "sampleId": null,
+      "names": [
+          "M18"
+      ],
+      "composition": null,
+      "referenceUrl": "a",
+      "description": "b",
+      "generalAttributes": [],
+      "specificAttributes": [],
+      "ownerId": "060e27b4095a5fa40e9414888108ce60e5628a1b3830643062663233"
+  }
+}

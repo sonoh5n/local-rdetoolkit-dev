@@ -1,0 +1,8 @@
+system:
+    extended_mode: 'MultiDataTile'
+    save_raw: false
+    save_nonshared_raw: true
+    magic_variable: false
+    save_thumbnail_image: true
+custom:
+    tem_dm3_mode: true

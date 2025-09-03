@@ -1,0 +1,9 @@
+{
+    "constant": {
+        "analyzer_work_function": {
+            "value": "3.700",
+            "unit": "eV"
+        }
+    },
+    "variable": []
+}
